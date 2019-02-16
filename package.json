@@ -1,0 +1,38 @@
+{
+  "name": "@khgame/decorator-koa-router",
+  "version": "0.1.0",
+  "description": "decorator of koa router",
+  "main": "index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khgame/decorator-koa-router.ts.git"
+  },
+  "keywords": [
+    "Koa",
+    "router",
+    "decorator",
+    "khgame",
+    "es7"
+  ],
+  "author": "kinghand <kinghand@foxmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/khgame/decorator-koa-router.ts/issues"
+  },
+  "homepage": "https://github.com/khgame/decorator-koa-router.ts#readme",
+  "devDependencies": {
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "@types/fs-extra": "^5.0.5",
+    "fs-extra": "^7.0.1",
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0"
+  }
+}
