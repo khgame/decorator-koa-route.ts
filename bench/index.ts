@@ -1,8 +1,10 @@
 import * as Koa from "koa";
 import * as Router from "koa-router";
-import { router, useFolder } from "../src";
+import { router, useController, useFolder } from "../src";
 
-console.log("useFolder", useFolder(`${__dirname}/controllers`, true));
+// console.log("useFolder", useFolder(`${__dirname}/controllers`, true));
+
+useController(`${__dirname}/controllers`)
 
 const app = new Koa();
 
