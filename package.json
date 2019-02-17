@@ -5,8 +5,9 @@
   "main": "index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prepublishOnly": "npm run build"
+    "build": "rimraf ./lib && tsc",
+    "prepublishOnly": "npm run build",
+    "bench": "npm run build && node ./lib/bench"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,14 @@
   },
   "homepage": "https://github.com/khgame/decorator-koa-router.ts#readme",
   "devDependencies": {
+    "rimraf": "^2.6.3",
     "tslint": "^5.12.1",
     "typescript": "^3.3.3"
   },
   "dependencies": {
     "@types/fs-extra": "^5.0.5",
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.39",
     "fs-extra": "^7.0.1",
     "koa": "^2.7.0",
     "koa-router": "^7.4.0"

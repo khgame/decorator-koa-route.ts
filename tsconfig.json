@@ -9,13 +9,14 @@
     "preserveConstEnums": true,
     "sourceMap": true,
     "strict": true,
-    "listFiles": true,
+//    "listFiles": true,
     "declaration": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true
   },
   "include": [
-    "src/**/*"
+    "src/**/*",
+    "bench/**/*"
   ],
   "exclude": [
     "node_modules"

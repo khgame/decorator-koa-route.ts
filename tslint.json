@@ -9,6 +9,8 @@
   "rules": {
     "no-console": false,
     "no-var-keyword": true,
+    "no-var-requires": false,
+    "no-bitwise": false,
     "comment-format": [
       true,
       "check-space"
