@@ -1,3 +1,6 @@
+# build
+./lib
+
 # IDE
 .idea
 .vscode
