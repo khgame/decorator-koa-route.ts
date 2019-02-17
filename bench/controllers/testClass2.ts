@@ -1,5 +1,5 @@
 import { Context } from "koa";
-import { api, controller, HttpMethod } from "../../src/index";
+import { api, controller, HttpMethod } from "../../index";
 
 @controller("/another")
 class AClass2 {

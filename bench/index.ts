@@ -1,6 +1,6 @@
 import * as Koa from "koa";
 import * as Router from "koa-router";
-import { router, useController, useFolder } from "../src";
+import { router, useController, useFolder } from "../index";
 
 // console.log("useFolder", useFolder(`${__dirname}/controllers`, true));
 

@@ -1,8 +1,8 @@
 import { Middleware} from "koa";
 import * as Router from "koa-router";
-import { HttpMethod } from "./constants";
+import { HttpMethod } from "./src/constants";
 
-export * from "./constants";
+export * from "./src/constants";
 
 const methodLst: Map<HttpMethod, any> = new  Map<HttpMethod, any>();
 methodLst.set(HttpMethod.GET, Router.prototype.get);
@@ -64,4 +64,4 @@ export function api(path?: string, method?: HttpMethod, ...middleware: Middlewar
     };
 }
 
-export * from "./useFile";
+export * from "./src/useFile";
